@@ -1,3 +1,51 @@
 body {
-  background: aquamarine;
+  background: linear-gradient(
+    98.3deg,
+    rgb(0, 0, 0) 10.6%,
+    rgb(255, 0, 0) 97.7%
+  );
+}
+.container {
+  background: linear-gradient(
+    69.5deg,
+    rgb(251, 0, 0) -0.5%,
+    rgb(3, 10, 252) 97.4%
+  );
+  align-content: center;
+  margin: 200px auto;
+  max-width: 650px;
+}
+
+header {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhthCt0_o7ffulk4o9BUN1MHqpxTAWtcLGkXn15pC2RQ&s);
+  background-size: contain;
+  background-repeat: center;
+  background-clip: text;
+  color: transparent;
+  font-size: 150%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+form {
+  padding-left: 30px;
+  border: none;
+  margin-bottom: 30px auto;
+}
+
+.input {
+  padding: 10px 10px;
+  border-radius: 30px;
+  width: 50%;
+  border: white;
+  outline: none;
+  margin-left: 70px;
+}
+
+.search {
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 98px;
 }
