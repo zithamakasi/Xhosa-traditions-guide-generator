@@ -1,17 +1,25 @@
 body {
   background-image: url("https://isibheqe.org.za/wp-content/uploads/2020/03/omngiglot-isibheqe.png");
   background-repeat: repeat;
-  align-content: center;
 }
 .container {
   margin: 120px auto;
   max-width: 650px;
-  background-image: url("../images/backgroundpic.jpg");
-  background-repeat: repeat;
+  background: #3e2723;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: fit-content;
   border-radius: 10px;
+  background-color: transparent;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/pic4.png");
 }
-
+.pic {
+  width: 150px;
+  margin-top: 40px;
+  display: block;
+}
 header {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhthCt0_o7ffulk4o9BUN1MHqpxTAWtcLGkXn15pC2RQ&s");
   background-size: contain;
@@ -23,22 +31,30 @@ header {
   line-height: 1.5;
 }
 
+.heading {
+  -webkit-text-stroke: 0.1px #f4c9d6;
+}
+
 form {
-  padding-left: 30px;
+  padding-left: 10px;
   border: none;
-  margin-bottom: 30px auto;
+  margin-bottom: 10px auto;
 }
 
 .input {
+  background-color: #3e2723;
+  color: #f4c9d6;
   padding: 10px 10px;
   border-radius: 30px;
-  width: 50%;
+  width: 70%;
   border: white;
   outline: none;
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 .search {
+  background-color: #3e2723;
+  color: #f4c9d6;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
   border: none;
@@ -47,14 +63,14 @@ form {
 }
 
 .para {
-  color: black;
+  color: #f4c9d6;
   font-size: 120%;
   line-height: 1.5;
   margin: 25px 10px;
 }
 
 .foot {
-  color: black;
+  color: #f4c9d6;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 50px;
@@ -63,5 +79,5 @@ form {
 }
 
 .link {
-  color: aqua;
+  color: #7298c7;
 }
