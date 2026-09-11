@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Xhosa traditions guide generator</title>
 </head>
@@ -17,20 +18,13 @@
         </header>
 
         <main>
-            <form>
+            <form id="generator">
                 <input type="text" placeholder="Enter topic for a xhosa tradition" autofocus required autocomplete="off"
                     class="input" />
-                <input type="search" placeholder="Search" class="search" />
+                <input type="submit" placeholder="Submit" class="search" />
 
             </form>
-            <div class="para">
-                The Xhosa people are descendants of Nguni clans who settled in the southeastern part of Southern Africa
-                displacing the<br />
-                original inhabitants, the Khoisan. Archaeological evidence suggests that the Xhosa people have inhabited
-                the
-                area since<br />
-                the 7th century.
-            </div>
+            <div class="para" id="paragraph"></div>
         </main>
         <footer class="foot">This AI project was coded by <a href="https://github.com/zithamakasi" target="_blank"
                 class="link">Zitha Makasi</a>
@@ -40,7 +34,6 @@
                 class="link">Netlify</a>
         </footer>
     </div>
-    <img src="images/pic4.jpg">
     <script src="src/index.js"></script>
 
 </body>
