@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Xhosa traditions guide generator</title>
 </head>
@@ -20,7 +21,7 @@
         <main>
             <form id="generator">
                 <input type="text" placeholder="Enter topic for a xhosa tradition" autofocus required autocomplete="off"
-                    class="input" />
+                    class="input" id="instruction" />
                 <input type="submit" placeholder="Submit" class="search" />
 
             </form>
