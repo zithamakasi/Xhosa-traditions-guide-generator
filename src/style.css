@@ -69,6 +69,10 @@ form {
   margin: 25px 10px;
 }
 
+.para strong {
+  color: #7298c7;
+}
+
 .foot {
   color: #f4c9d6;
   font-size: 20px;
