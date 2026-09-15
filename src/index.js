@@ -1,6 +1,4 @@
 function displayAnswers(response) {
-  console.log("answer generated");
-
   new Typewriter("#paragraph", {
     strings: response.data.answer,
     autoStart: true,
@@ -22,10 +20,6 @@ function fetch(event) {
   let paraElement = document.querySelector("#paragraph");
   paraElement.classList.remove("hidden");
   paraElement.innerHTML = `<div class="generating">⌛Generating a Xhosa traditional fact about ${input.value}</div>`;
-
-  console.log("Generating answer");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayAnswers);
 }
