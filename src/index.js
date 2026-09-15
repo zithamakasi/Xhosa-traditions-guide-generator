@@ -19,6 +19,10 @@ function fetch(event) {
     "You are a Xhosa descendant and you have a deep knownledge of the traditions and roots of the Xhosa bloodline which you are going to share with those that are not in the Xhosa tribe. Your mission is to generate a 7 lines answer.Make sure to follow the user input and with the answers provide an image according to the user input. Please dont mix up the Zulu culture and Xhosa culture only give answers according to the xhosa culture. Add 'SheCodes AI' in <strong> and write it in a separate line from the last sentance using a <br/> and write it at the end of the answers.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let paraElement = document.querySelector("#paragraph");
+  paraElement.classList.remove("hidden");
+  paraElement.innerHTML = `<div class="generating">⌛Generating a Xhosa traditional fact about ${input.value}</div>`;
+
   console.log("Generating answer");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

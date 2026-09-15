@@ -67,6 +67,31 @@ form {
   font-size: 120%;
   line-height: 1.5;
   margin: 25px 10px;
+  padding: 10px 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hint {
+  padding: 10px 15px;
+  margin-left: 30px;
+  color: #f4c9d6;
+}
+
+.generating {
+  animation: blinker-smooth 1s linear infinite;
+}
+
+@keyframes blinker-smooth {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .para strong {
